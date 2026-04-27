@@ -12,7 +12,7 @@ Este repositorio esta preparado para que cada alumno:
 
 1. Haga un fork.
 2. Lance un Codespace.
-3. Complete los módulos capítulo a capítulo y luego el laboratorio por steps.
+3. Complete los labs paso a paso con instrucciones claras.
 
 ## Estructura
 
@@ -50,11 +50,13 @@ Flujo recomendado para alumnos:
 
 1. Entrar al repo y pulsar `Fork`.
 2. Abrir el fork y pulsar `Code` -> `Codespaces` -> `Create codespace on main`.
-3. Ejecutar `labs/00-prework` para validar el entorno del curso.
+3. Ejecutar `labs/00-prework` para completar el setup del entorno.
 
-Nota: `kubectl`, `kind` y `helm` se instalan durante el prework para reforzar aprendizaje practico.
+Nota: `kubectl`, `kind` y `helm` se instalan durante el setup para reforzar aprendizaje practico.
 
-## Empezar ahora
+## Empezar ahora (flujo guiado)
 
-- [Siguiente: Modulo 1 - Prework](labs/00-prework/README.md)
-- [Indice de módulos](labs/README.md)
+Pulsa aqui para comenzar directamente:
+
+- [Abrir libro de practicas](labs/README.md)
+- [Siguiente: Capitulo 1 - Setup](labs/00-prework/README.md)

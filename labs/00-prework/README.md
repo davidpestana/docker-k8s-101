@@ -1,4 +1,4 @@
-# Prework - Fundamentos y prework tecnico
+# Setup - Fundamentos y entorno tecnico
 
 Alineado a la introduccion del curso y al inicio del **Modulo 1**: primero ideas claras, luego instalacion validada paso a paso.
 
@@ -54,7 +54,7 @@ Checkpoint mental: si la Parte A esta clara, continua con la Parte B.
 
 ---
 
-## Parte B - Prework tecnico (instalacion y validacion)
+## Parte B - Setup tecnico (instalacion y validacion)
 
 ### Paso B.1 - Verificar Docker y Compose
 

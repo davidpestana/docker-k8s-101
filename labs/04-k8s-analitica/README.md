@@ -8,10 +8,26 @@
 - Externalizar parametros sin rebuild de imagen (ConfigMap).
 - Mantener credenciales fuera del YAML en claro cuando proceda (Secret + `kubectl`).
 
-## Navegacion rapida
+## Explicacion teorica
 
-- [Anterior: Capitulo 4 - Kubernetes basico](../03-k8s-basico/README.md)
-- [Siguiente: Capitulo 6 - Proyecto final guiado](../05-proyecto-final/README.md)
+Lee este bloque con el grupo para fijar conceptos y vocabulario antes de tocar comandos.
+
+## Demo del profesor
+
+El profesor ejecuta el recorrido completo una vez, explica errores tipicos y marca que validar en cada salida.
+
+## Practica guiada
+
+Sigue exactamente los pasos de este capitulo en orden, sin saltar bloques.
+
+## Flujo de este capitulo (sin bifurcaciones)
+
+1. Explicacion teorica
+2. Demo del profesor
+3. Practica guiada
+4. Siguiente capitulo
+
+**Siguiente directo**: [Capitulo 6/6 - Proyecto final guiado](../05-proyecto-final/README.md)
 
 ## Prerrequisitos
 
@@ -209,7 +225,6 @@ kubectl -n analytics-lab delete configmap/etl-config secret/etl-db --ignore-not-
 
 ---
 
-## Navegacion
+## Siguiente
 
-- [Anterior: Capitulo 4 - Kubernetes basico](../03-k8s-basico/README.md)
-- [Siguiente: Capitulo 6 - Proyecto final guiado](../05-proyecto-final/README.md)
+- [Capitulo 6/6 - Proyecto final guiado](../05-proyecto-final/README.md)

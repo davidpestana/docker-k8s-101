@@ -8,10 +8,26 @@
 - Parametrizar con `.env` (sin secretos reales en el repo).
 - Entender **build context** por servicio (`build: ./api`).
 
-## Navegacion rapida
+## Explicacion teorica
 
-- [Anterior: Capitulo 2 - Docker basico](../01-docker-basico/README.md)
-- [Siguiente: Capitulo 4 - Kubernetes basico](../03-k8s-basico/README.md)
+Lee este bloque con el grupo para fijar conceptos y vocabulario antes de tocar comandos.
+
+## Demo del profesor
+
+El profesor ejecuta el recorrido completo una vez, explica errores tipicos y marca que validar en cada salida.
+
+## Practica guiada
+
+Sigue exactamente los pasos de este capitulo en orden, sin saltar bloques.
+
+## Flujo de este capitulo (sin bifurcaciones)
+
+1. Explicacion teorica
+2. Demo del profesor
+3. Practica guiada
+4. Siguiente capitulo
+
+**Siguiente directo**: [Capitulo 4/6 - Kubernetes basico](../03-k8s-basico/README.md)
 
 ---
 
@@ -259,7 +275,6 @@ docker compose --profile etl run --rm etl
 
 ---
 
-## Navegacion
+## Siguiente
 
-- [Anterior: Capitulo 2 - Docker basico](../01-docker-basico/README.md)
-- [Siguiente: Capitulo 4 - Kubernetes basico](../03-k8s-basico/README.md)
+- [Capitulo 4/6 - Kubernetes basico](../03-k8s-basico/README.md)

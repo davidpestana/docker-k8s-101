@@ -8,10 +8,26 @@
 - Documentar **por que** cada decision de estructura (carpetas, base/overlays, Secret vs ConfigMap).
 - Dejar un mini-proyecto **entregable** en `labs/05-proyecto-final/trabajo/`.
 
-## Navegacion rapida
+## Explicacion teorica
 
-- [Anterior: Capitulo 5 - Kubernetes para analitica](../04-k8s-analitica/README.md)
-- [Volver al indice del libro](../README.md)
+Lee este bloque con el grupo para fijar conceptos y vocabulario antes de tocar comandos.
+
+## Demo del profesor
+
+El profesor ejecuta el recorrido completo una vez, explica errores tipicos y marca que validar en cada salida.
+
+## Practica guiada
+
+Sigue exactamente los pasos de este capitulo en orden, sin saltar bloques.
+
+## Flujo de este capitulo (sin bifurcaciones)
+
+1. Explicacion teorica
+2. Demo del profesor
+3. Practica guiada
+4. Cierre y entrega
+
+**Final del recorrido**: [Volver al indice del libro](../README.md)
 
 ---
 
@@ -107,7 +123,6 @@ Relaciona con EKS/GKE/AKS: el cluster en cloud **descarga** la imagen desde un r
 
 ---
 
-## Navegacion
+## Cierre
 
-- [Anterior: Capitulo 5 - Kubernetes para analitica](../04-k8s-analitica/README.md)
 - [Volver al indice del libro](../README.md)

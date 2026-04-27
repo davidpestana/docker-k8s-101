@@ -2,10 +2,14 @@
 
 Alineado al **Modulo 1 (2h)** y al inicio del **Modulo 2** del temario: primero ideas claras, luego instalacion validada paso a paso.
 
-## Navegacion rapida
+## Flujo de este capitulo (sin bifurcaciones)
 
-- [Indice del libro](../README.md)
-- [Siguiente: Capitulo 2 - Docker basico](../01-docker-basico/README.md)
+1. Explicacion teorica
+2. Demo del profesor
+3. Practica guiada
+4. Siguiente capitulo
+
+**Siguiente directo**: [Capitulo 2/6 - Docker basico](../01-docker-basico/README.md)
 
 ---
 
@@ -141,7 +145,6 @@ kubectl delete deployment hello-nginx
 
 ---
 
-## Navegacion
+## Siguiente
 
-- [Indice del libro](../README.md)
-- [Siguiente: Capitulo 2 - Docker basico](../01-docker-basico/README.md)
+- [Capitulo 2/6 - Docker basico](../01-docker-basico/README.md)

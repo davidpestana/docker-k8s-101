@@ -10,10 +10,26 @@
 - Conectar **dos contenedores por red** (patron "app + base de datos" simplificado).
 - Opcional temario: **Jupyter** y **PostgreSQL + cliente Python** como ejercicios cortos.
 
-## Navegacion rapida
+## Explicacion teorica
 
-- [Anterior: Capitulo 1 - Prework](../00-prework/README.md)
-- [Siguiente: Capitulo 3 - Docker para analitica](../02-docker-analitica/README.md)
+Lee este bloque con el grupo para fijar conceptos y vocabulario antes de tocar comandos.
+
+## Demo del profesor
+
+El profesor ejecuta el recorrido completo una vez, explica errores tipicos y marca que validar en cada salida.
+
+## Practica guiada
+
+Sigue exactamente los pasos de este capitulo en orden, sin saltar bloques.
+
+## Flujo de este capitulo (sin bifurcaciones)
+
+1. Explicacion teorica
+2. Demo del profesor
+3. Practica guiada
+4. Siguiente capitulo
+
+**Siguiente directo**: [Capitulo 3/6 - Docker para analitica](../02-docker-analitica/README.md)
 
 ---
 
@@ -278,7 +294,6 @@ docker compose up --abort-on-container-exit
 
 ---
 
-## Navegacion
+## Siguiente
 
-- [Anterior: Capitulo 1 - Prework](../00-prework/README.md)
-- [Siguiente: Capitulo 3 - Docker para analitica](../02-docker-analitica/README.md)
+- [Capitulo 3/6 - Docker para analitica](../02-docker-analitica/README.md)

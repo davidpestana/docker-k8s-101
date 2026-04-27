@@ -58,5 +58,6 @@ Nota: `kubectl`, `kind` y `helm` se instalan durante el prework para reforzar ap
 
 Pulsa aqui para comenzar directamente:
 
-- [Abrir libro de practicas](labs/README.md)
-- [Siguiente: Capitulo 1 - Prework](labs/00-prework/README.md)
+- [Siguiente: Capitulo 1/6 - Fundamentos y prework tecnico](labs/00-prework/README.md)
+
+Indice opcional: `labs/README.md`

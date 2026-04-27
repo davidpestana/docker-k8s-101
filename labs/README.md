@@ -29,6 +29,6 @@ Cada lab incluye:
 5. 04-k8s-analitica
 6. 05-proyecto-final
 
-## Comenzar
+## Comenzar (flujo lineal)
 
-- [Siguiente: Capitulo 1 - Prework](00-prework/README.md)
+- [Siguiente: Capitulo 1/6 - Fundamentos y prework tecnico](00-prework/README.md)

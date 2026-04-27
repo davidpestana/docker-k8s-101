@@ -8,10 +8,26 @@
 - Versionar imagenes (`:0.1.0`, no solo `latest`).
 - Entender **por que** Kustomize: mismos manifiestos, distintos entornos sin copiar/pegar gigante.
 
-## Navegacion rapida
+## Explicacion teorica
 
-- [Anterior: Capitulo 3 - Docker para analitica](../02-docker-analitica/README.md)
-- [Siguiente: Capitulo 5 - Kubernetes para analitica](../04-k8s-analitica/README.md)
+Lee este bloque con el grupo para fijar conceptos y vocabulario antes de tocar comandos.
+
+## Demo del profesor
+
+El profesor ejecuta el recorrido completo una vez, explica errores tipicos y marca que validar en cada salida.
+
+## Practica guiada
+
+Sigue exactamente los pasos de este capitulo en orden, sin saltar bloques.
+
+## Flujo de este capitulo (sin bifurcaciones)
+
+1. Explicacion teorica
+2. Demo del profesor
+3. Practica guiada
+4. Siguiente capitulo
+
+**Siguiente directo**: [Capitulo 5/6 - Kubernetes para analitica](../04-k8s-analitica/README.md)
 
 ## Prerrequisitos
 
@@ -384,7 +400,6 @@ kubectl delete namespace analytics-lab
 
 ---
 
-## Navegacion
+## Siguiente
 
-- [Anterior: Capitulo 3 - Docker para analitica](../02-docker-analitica/README.md)
-- [Siguiente: Capitulo 5 - Kubernetes para analitica](../04-k8s-analitica/README.md)
+- [Capitulo 5/6 - Kubernetes para analitica](../04-k8s-analitica/README.md)

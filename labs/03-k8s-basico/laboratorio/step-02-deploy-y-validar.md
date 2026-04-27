@@ -15,3 +15,7 @@ curl -sS http://127.0.0.1:8080/health
 ## Siguiente
 
 - [step-03-kustomize-overlay.md](step-03-kustomize-overlay.md)
+## Navegacion del libro
+
+- [Anterior](step-01-manifests-base.md)
+- [Siguiente](step-03-kustomize-overlay.md)

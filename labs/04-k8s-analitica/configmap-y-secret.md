@@ -20,3 +20,7 @@ kubectl -n analytics-lab get configmap,secret
 # LABORATORIO
 
 - [step-01-crear-configuracion.md](laboratorio/step-01-crear-configuracion.md)
+## Navegacion del libro
+
+- [Anterior](cronjob-etl-programado.md)
+- [Siguiente](laboratorio/step-01-crear-configuracion.md)

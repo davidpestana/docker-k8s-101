@@ -1,6 +1,6 @@
 # Docker + Kubernetes 101
 
-[![Comenzar](https://img.shields.io/badge/Comenzar-Curso-success?style=for-the-badge)](labs/00-prework/README.md)
+[![Comenzar](https://img.shields.io/badge/Comenzar-Curso-success?style=for-the-badge)](labs/00-setup/README.md)
 
 ## Descripcion del curso
 
@@ -39,7 +39,7 @@ La formacion sigue un formato progresivo y guiado:
 
 ## Temario (indice extendido)
 
-0. Setup - Fundamentos y entorno (`labs/00-prework`)
+0. Setup - Fundamentos y entorno (`labs/00-setup`)
    - Fundamentos base
      - Que es un contenedor y diferencias frente a una VM.
      - Relacion entre Docker, Kubernetes y entorno de trabajo.
@@ -150,4 +150,4 @@ Flujo recomendado:
 
 1. Haz `Fork` del repositorio.
 2. Abre tu fork en Codespaces.
-3. Comienza en `labs/00-prework/README.md`.
+3. Comienza en `labs/00-setup/README.md`.

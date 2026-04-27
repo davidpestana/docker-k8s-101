@@ -32,3 +32,7 @@ Validación: el alumno explica qué recursos consume su entorno y cómo limpiarl
 # LABORATORIO
 
 - [step-01-ejecutar-y-listar-contenedores.md](laboratorio/step-01-ejecutar-y-listar-contenedores.md)
+## Navegacion del libro
+
+- [Anterior](orquestacion-con-docker-compose.md)
+- [Siguiente](laboratorio/step-01-ejecutar-y-listar-contenedores.md)

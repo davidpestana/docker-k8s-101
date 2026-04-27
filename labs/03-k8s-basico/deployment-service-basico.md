@@ -22,3 +22,7 @@ kubectl -n analytics-lab get pods,svc
 ## Continuar
 
 - [imagenes-kind-y-registry.md](imagenes-kind-y-registry.md)
+## Navegacion del libro
+
+- [Anterior](README.md)
+- [Siguiente](imagenes-kind-y-registry.md)

@@ -16,3 +16,7 @@
 # LABORATORIO
 
 - [step-01-esqueleto-final.md](laboratorio/step-01-esqueleto-final.md)
+## Navegacion del libro
+
+- [Anterior](pipeline-build-push-deploy.md)
+- [Siguiente](laboratorio/step-01-esqueleto-final.md)

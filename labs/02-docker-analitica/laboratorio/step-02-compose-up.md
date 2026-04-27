@@ -15,3 +15,7 @@ curl -sS http://localhost:8000/db/ping
 ## Siguiente
 
 - [step-03-etl-on-demand.md](step-03-etl-on-demand.md)
+## Navegacion del libro
+
+- [Anterior](step-01-estructura-stack.md)
+- [Siguiente](step-03-etl-on-demand.md)

@@ -22,3 +22,7 @@ docker push ghcr.io/TU_USUARIO/docker-k8s-101/analytics-api:0.1.0
 ## Continuar
 
 - [kustomize-base-overlays.md](kustomize-base-overlays.md)
+## Navegacion del libro
+
+- [Anterior](deployment-service-basico.md)
+- [Siguiente](kustomize-base-overlays.md)

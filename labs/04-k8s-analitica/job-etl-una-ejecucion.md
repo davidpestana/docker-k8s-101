@@ -18,3 +18,7 @@ kubectl -n analytics-lab logs job/etl-once
 ## Continuar
 
 - [cronjob-etl-programado.md](cronjob-etl-programado.md)
+## Navegacion del libro
+
+- [Anterior](README.md)
+- [Siguiente](cronjob-etl-programado.md)

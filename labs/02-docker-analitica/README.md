@@ -1,4 +1,4 @@
-# Modulo 3 - Docker para analítica
+# Modulo 2 - Docker para analítica
 
 ## Capítulos del módulo
 
@@ -18,4 +18,8 @@ Directorio: `labs/02-docker-analitica/laboratorio/`
 
 ---
 
-- [Siguiente módulo: Kubernetes básico](../03-k8s-basico/README.md)
+- [Siguiente módulo: Modulo 3 - Kubernetes básico](../03-k8s-basico/README.md)
+## Navegacion del libro
+
+- [Anterior](../01-docker-basico/laboratorio/step-03-dockerfile-build-compose.md)
+- [Siguiente](api-fastapi-con-docker.md)

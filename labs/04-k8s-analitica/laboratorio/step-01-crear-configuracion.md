@@ -13,3 +13,7 @@ kubectl apply -f labs/04-k8s-analitica/trabajo/k8s-batch/01-secret-etl-db.yaml
 ## Siguiente
 
 - [step-02-ejecutar-job.md](step-02-ejecutar-job.md)
+## Navegacion del libro
+
+- [Anterior](../configmap-y-secret.md)
+- [Siguiente](step-02-ejecutar-job.md)

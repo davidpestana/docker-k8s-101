@@ -19,3 +19,7 @@ kubectl -n analytics-lab get pods
 # LABORATORIO
 
 - [step-01-manifests-base.md](laboratorio/step-01-manifests-base.md)
+## Navegacion del libro
+
+- [Anterior](imagenes-kind-y-registry.md)
+- [Siguiente](laboratorio/step-01-manifests-base.md)

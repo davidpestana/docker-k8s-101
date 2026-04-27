@@ -1,4 +1,4 @@
-# Modulo 4 - Kubernetes básico
+# Modulo 3 - Kubernetes básico
 
 ## Capítulos del módulo
 
@@ -18,4 +18,8 @@ Directorio: `labs/03-k8s-basico/laboratorio/`
 
 ---
 
-- [Siguiente módulo: Kubernetes para analítica](../04-k8s-analitica/README.md)
+- [Siguiente módulo: Modulo 4 - Kubernetes para analítica](../04-k8s-analitica/README.md)
+## Navegacion del libro
+
+- [Anterior](../02-docker-analitica/laboratorio/step-03-etl-on-demand.md)
+- [Siguiente](deployment-service-basico.md)

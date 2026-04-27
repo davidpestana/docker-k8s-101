@@ -9,3 +9,7 @@ kubectl -n analytics-lab logs job/etl-once
 ## Siguiente
 
 - [step-03-activar-cronjob.md](step-03-activar-cronjob.md)
+## Navegacion del libro
+
+- [Anterior](step-01-crear-configuracion.md)
+- [Siguiente](step-03-activar-cronjob.md)

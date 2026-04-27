@@ -9,3 +9,7 @@ kubectl apply -k k8s/overlays/local
 ## Siguiente
 
 - [step-03-validacion-y-entrega.md](step-03-validacion-y-entrega.md)
+## Navegacion del libro
+
+- [Anterior](step-01-esqueleto-final.md)
+- [Siguiente](step-03-validacion-y-entrega.md)

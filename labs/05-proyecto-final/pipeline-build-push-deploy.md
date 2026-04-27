@@ -22,3 +22,7 @@ docker push ghcr.io/TU_USUARIO/docker-k8s-101/proyecto-api:0.1.0
 ## Continuar
 
 - [criterios-de-entrega.md](criterios-de-entrega.md)
+## Navegacion del libro
+
+- [Anterior](definicion-del-proyecto.md)
+- [Siguiente](criterios-de-entrega.md)

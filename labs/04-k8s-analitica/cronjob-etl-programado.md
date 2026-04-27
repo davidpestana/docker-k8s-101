@@ -19,3 +19,7 @@ kubectl -n analytics-lab get jobs --watch
 ## Continuar
 
 - [configmap-y-secret.md](configmap-y-secret.md)
+## Navegacion del libro
+
+- [Anterior](job-etl-una-ejecucion.md)
+- [Siguiente](configmap-y-secret.md)

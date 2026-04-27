@@ -1,4 +1,4 @@
-# Modulo 6 - Proyecto final guiado
+# Modulo 5 - Proyecto final guiado
 
 ## Capítulos del módulo
 
@@ -19,3 +19,7 @@ Directorio: `labs/05-proyecto-final/laboratorio/`
 ---
 
 - [Volver al índice general](../README.md)
+## Navegacion del libro
+
+- [Anterior](../04-k8s-analitica/laboratorio/step-03-activar-cronjob.md)
+- [Siguiente](definicion-del-proyecto.md)

@@ -2,13 +2,6 @@
 
 Alineado a la introduccion del curso y al inicio del **Modulo 1**: primero ideas claras, luego instalacion validada paso a paso.
 
-## Navegacion rapida
-
-- [Indice del libro](../README.md)
-- [Siguiente: Modulo 1 - Docker basico](../01-docker-basico/README.md)
-
----
-
 ## Parte A - Fundamentos
 
 ### A.1 Que es un contenedor (y que no es)
@@ -145,3 +138,7 @@ kubectl delete deployment hello-nginx
 
 - [Indice del libro](../README.md)
 - [Siguiente: Modulo 1 - Docker basico](../01-docker-basico/README.md)
+## Navegacion del libro
+
+- [Anterior](../README.md)
+- [Siguiente](../01-docker-basico/README.md)

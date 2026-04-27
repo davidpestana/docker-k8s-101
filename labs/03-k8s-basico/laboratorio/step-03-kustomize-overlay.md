@@ -10,3 +10,7 @@ Validación: al menos 2 pods de `analytics-api` en `Running`.
 ## Continuar
 
 - [Ir al siguiente módulo](../../04-k8s-analitica/README.md)
+## Navegacion del libro
+
+- [Anterior](step-02-deploy-y-validar.md)
+- [Siguiente](../../04-k8s-analitica/README.md)

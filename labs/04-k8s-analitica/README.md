@@ -1,4 +1,4 @@
-# Modulo 5 - Kubernetes para analítica
+# Modulo 4 - Kubernetes para analítica
 
 ## Capítulos del módulo
 
@@ -18,4 +18,8 @@ Directorio: `labs/04-k8s-analitica/laboratorio/`
 
 ---
 
-- [Siguiente módulo: Proyecto final](../05-proyecto-final/README.md)
+- [Siguiente módulo: Modulo 5 - Proyecto final](../05-proyecto-final/README.md)
+## Navegacion del libro
+
+- [Anterior](../03-k8s-basico/laboratorio/step-03-kustomize-overlay.md)
+- [Siguiente](job-etl-una-ejecucion.md)

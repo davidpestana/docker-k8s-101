@@ -10,3 +10,7 @@ Validación: aparecen ejecuciones hijas en `kubectl -n analytics-lab get jobs`.
 ## Continuar
 
 - [Ir al siguiente módulo](../../05-proyecto-final/README.md)
+## Navegacion del libro
+
+- [Anterior](step-02-ejecutar-job.md)
+- [Siguiente](../../05-proyecto-final/README.md)

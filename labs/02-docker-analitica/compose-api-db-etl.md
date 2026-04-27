@@ -21,3 +21,7 @@ docker compose --profile etl run --rm etl
 # LABORATORIO
 
 - [step-01-estructura-stack.md](laboratorio/step-01-estructura-stack.md)
+## Navegacion del libro
+
+- [Anterior](etl-batch-con-docker.md)
+- [Siguiente](laboratorio/step-01-estructura-stack.md)

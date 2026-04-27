@@ -19,7 +19,7 @@ Este repositorio esta preparado para que cada alumno:
 - `docs/modulos/`: guias por modulo (teoria breve + practica).
 - `docs/guias/`: hojas de ruta para alumnos.
 - `docs/instructor/`: notas para dinamica de sesiones.
-- `labs/`: practicas por bloques, incluyendo prework y proyecto final.
+- `labs/`: libro de practicas (cada `README.md` es un capitulo con pasos, comandos, YAML y **creacion explicita de ficheros** bajo `labs/*/trabajo/`).
 - `plantillas/`: base reusable para Dockerfile, Compose y Kubernetes.
 - `soluciones/`: referencia para instructor (o publicacion diferida).
 - `assets/datasets/`: datasets de ejemplo.
@@ -28,8 +28,8 @@ Este repositorio esta preparado para que cada alumno:
 
 1. `labs/00-prework`: validacion de entorno.
 2. `labs/01-docker-basico`: contenedores, imagenes, volumenes.
-3. `labs/02-docker-analitica`: notebook + API + base de datos.
-4. `labs/03-k8s-basico`: Pods, Deployments, Services.
+3. `labs/02-docker-analitica`: Compose con API FastAPI + PostgreSQL + ETL batch.
+4. `labs/03-k8s-basico`: Pods, Deployments, Services, imagenes, GHCR o kind load, Kustomize base/overlays.
 5. `labs/04-k8s-analitica`: Jobs, CronJobs, ConfigMaps, Secrets.
 6. `labs/05-proyecto-final`: flujo end-to-end guiado.
 

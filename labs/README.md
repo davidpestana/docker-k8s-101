@@ -2,6 +2,8 @@
 
 Lee este curso como un libro: abre el capitulo 1 y avanza siempre con el enlace `Siguiente`.
 
+**Carga lectiva orientativa (temario 20h)**: cada capitulo enlaza con modulos del `docs/temario.md` e incluye bloques con tiempo aproximado; tu parte presencial en Teams completa el 30% de teoria.
+
 ## Indice lineal (paginas)
 
 1. [Capitulo 1 - Prework del entorno](00-prework/README.md)

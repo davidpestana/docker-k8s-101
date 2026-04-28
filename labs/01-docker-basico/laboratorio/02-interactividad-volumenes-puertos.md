@@ -1,5 +1,9 @@
 # Step 02 - Interactividad, volumenes y puertos
 
+## Fundamento del step
+
+Este step no es solo ejecución de comandos: su objetivo es construir criterio técnico. Cada acción busca evitar errores frecuentes de entorno, de configuración o de integración entre servicios. Antes de avanzar, asegúrate de entender qué problema resuelve cada bloque.
+
 ## Descripcion del laboratorio
 
 En este paso vas a ver cómo interactuar con contenedores de forma directa (`-it`), cómo publicar puertos hacia el anfitrión y cómo persistir datos en directorios del host usando montajes.

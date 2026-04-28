@@ -4,6 +4,10 @@
 
 Ejecutar despliegue integrado local + cluster para comprobar que el proyecto final es operable.
 
+## Fundamento del step
+
+Este step no es solo ejecución de comandos: su objetivo es construir criterio técnico. Cada acción busca evitar errores frecuentes de entorno, de configuración o de integración entre servicios. Antes de avanzar, asegúrate de entender qué problema resuelve cada bloque.
+
 ## Ejecución guiada
 
 ### 1) Entrar en proyecto final

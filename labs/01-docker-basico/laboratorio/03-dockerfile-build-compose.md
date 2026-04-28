@@ -1,5 +1,9 @@
 # Step 03 - Dockerfile, build y compose
 
+## Fundamento del step
+
+Este step no es solo ejecución de comandos: su objetivo es construir criterio técnico. Cada acción busca evitar errores frecuentes de entorno, de configuración o de integración entre servicios. Antes de avanzar, asegúrate de entender qué problema resuelve cada bloque.
+
 ## Descripcion del laboratorio
 
 En este paso cierras el módulo construyendo una imagen propia y ejecutando un escenario multi-servicio con Compose para validar conectividad entre contenedores.

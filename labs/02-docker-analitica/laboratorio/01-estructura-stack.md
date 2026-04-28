@@ -16,6 +16,10 @@ Trabaja desde la raíz del repositorio.
 pwd
 ```
 
+## Fundamento del step
+
+Este step no es solo ejecución de comandos: su objetivo es construir criterio técnico. Cada acción busca evitar errores frecuentes de entorno, de configuración o de integración entre servicios. Antes de avanzar, asegúrate de entender qué problema resuelve cada bloque.
+
 ## Ejecución guiada
 
 ### 1) Crear carpetas principales

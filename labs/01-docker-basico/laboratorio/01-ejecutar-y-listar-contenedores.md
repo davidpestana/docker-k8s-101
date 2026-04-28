@@ -1,5 +1,9 @@
 # Step 01 - Ejecutar y listar contenedores
 
+## Fundamento del step
+
+Este step no es solo ejecución de comandos: su objetivo es construir criterio técnico. Cada acción busca evitar errores frecuentes de entorno, de configuración o de integración entre servicios. Antes de avanzar, asegúrate de entender qué problema resuelve cada bloque.
+
 ## Descripcion del laboratorio
 
 En este paso vas a practicar el ciclo de vida más básico de un contenedor: crear, ejecutar, listar y entender cuándo un contenedor queda detenido o se elimina automáticamente.

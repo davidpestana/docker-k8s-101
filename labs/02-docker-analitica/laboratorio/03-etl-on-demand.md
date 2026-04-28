@@ -8,6 +8,10 @@ Ejecutar el ETL de forma controlada para validar procesamiento de datos sin depe
 
 En escenarios reales, el ETL suele ejecutarse por evento o por planificación. Aquí validas el modo manual y su salida.
 
+## Fundamento del step
+
+Este step no es solo ejecución de comandos: su objetivo es construir criterio técnico. Cada acción busca evitar errores frecuentes de entorno, de configuración o de integración entre servicios. Antes de avanzar, asegúrate de entender qué problema resuelve cada bloque.
+
 ## Ejecución guiada
 
 ### 1) Mantener DB disponible

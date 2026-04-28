@@ -8,7 +8,7 @@
 
 ## Referencia oficial
 
-![Compose app diagram](https://docs.docker.com/compose/images/compose-app.webp)
+![Docker official logo](https://www.docker.com/app/uploads/2023/08/logo-guide-logos-1.svg)
 
 Fuente: [Docker Docs - Docker Compose](https://docs.docker.com/compose/)
 

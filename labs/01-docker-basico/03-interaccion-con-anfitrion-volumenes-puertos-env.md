@@ -8,7 +8,7 @@
 
 ## Referencia oficial
 
-![Docker volumes](https://docs.docker.com/storage/images/types-of-mounts-volume.png)
+![Docker Moby logo](https://www.docker.com/app/uploads/2022/03/Moby-logo.png)
 
 Fuente: [Docker Docs - Volumes](https://docs.docker.com/engine/storage/volumes/)
 

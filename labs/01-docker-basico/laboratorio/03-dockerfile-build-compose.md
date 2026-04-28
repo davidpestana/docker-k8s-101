@@ -1,10 +1,14 @@
 # Step 03 - Dockerfile, build y compose
 
-## Tareas
+## Descripcion del laboratorio
 
-1. Crear un `Dockerfile` mínimo y construir imagen.
-2. Crear `docker-compose.yml` con Postgres + cliente Python.
-3. Ejecutar compose y validar conexión SQL.
+En este paso cierras el módulo construyendo una imagen propia y ejecutando un escenario multi-servicio con Compose para validar conectividad entre contenedores.
+
+## Qué haces
+
+1. Construyes una imagen desde Dockerfile.
+2. Levantas un stack `Postgres + cliente Python` con Compose.
+3. Compruebas que el cliente consulta correctamente la base de datos.
 
 ```bash
 docker build -t custom-ubuntu-git .
@@ -12,14 +16,26 @@ cd labs/01-docker-basico/trabajo/pg-demo
 docker compose up --abort-on-container-exit
 ```
 
-## Validación final
+## Qué validas y qué debes ver
 
-- Imagen listada con `docker images`.
-- Salida `(1,)` en compose.
+- `docker build` finaliza con `Successfully tagged custom-ubuntu-git`.
+- `docker compose up` crea servicios `db` y `client`.
+- El contenedor `client` imprime `(1,)` al ejecutar `SELECT 1`.
 
-## Continuar
+## Reto
 
-- [Ir al Modulo 2](../../02-docker-analitica/README.md)
+Modifica el `docker-compose.yml` para que la base de datos use el nombre `demo_db` y actualiza la conexión del cliente para seguir funcionando.
+
+## Solucion del reto
+
+```yaml
+services:
+  db:
+    container_name: demo_db
+```
+
+En la conexión del cliente, mantiene `host=db` (nombre del servicio) para no romper la resolución DNS de Compose.
+
 ## Navegacion del libro
 
 - [Anterior](02-interactividad-volumenes-puertos.md)

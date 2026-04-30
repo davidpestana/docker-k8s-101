@@ -1,44 +1,166 @@
-# Step 03 - Dockerfile, build y compose
+# Step 03 - Entorno dev con build context, volumen, puerto y auto-refresh
+
+## Objetivo del step
+
+Montar un entorno de desarrollo contenerizado donde puedas cambiar código en local y ver el cambio reflejado en el servicio sin reconstruir imagen en cada edición.
 
 ## Fundamento del step
 
-Este step no es solo ejecución de comandos: su objetivo es construir criterio técnico. Cada acción busca evitar errores frecuentes de entorno, de configuración o de integración entre servicios. Antes de avanzar, asegúrate de entender qué problema resuelve cada bloque.
+Este step conecta cuatro conceptos clave de Docker en un caso real:
+
+- **Build context**: define qué archivos ve Docker durante el build.
+- **Volumen (bind mount)**: comparte código del host dentro del contenedor.
+- **Puerto publicado**: hace accesible el servicio desde el navegador/cliente.
+- **Auto-refresh**: acelera desarrollo al recargar el servicio al guardar archivos.
 
 ## Descripcion del laboratorio
 
-En este paso cierras el módulo construyendo una imagen propia y ejecutando un escenario multi-servicio con Compose para validar conectividad entre contenedores.
+Vas a crear una mini API en Python (Flask), construir su imagen y ejecutarla en modo desarrollo con recarga automática usando un bind mount del código.
 
-## Qué haces
+## Ejecución guiada
 
-1. Construyes una imagen desde Dockerfile.
-2. Levantas un stack `Postgres + cliente Python` con Compose.
-3. Compruebas que el cliente consulta correctamente la base de datos.
+### 1) Crear estructura de proyecto de desarrollo
 
 ```bash
-docker build -t custom-ubuntu-git .
-cd labs/01-docker-basico/trabajo/pg-demo
-docker compose up --abort-on-container-exit
+mkdir -p labs/01-docker-basico/trabajo/dev-live/app
+```
+
+Crea `labs/01-docker-basico/trabajo/dev-live/requirements.txt`:
+
+```text
+flask==3.0.3
+```
+
+Crea `labs/01-docker-basico/trabajo/dev-live/app/main.py`:
+
+```python
+from flask import Flask, jsonify
+
+app = Flask(__name__)
+
+@app.get("/health")
+def health():
+    return jsonify({"status": "ok", "version": "v1"})
+
+@app.get("/message")
+def message():
+    return jsonify({"message": "Hola desde Docker dev-live"})
+```
+
+### 2) Crear Dockerfile (con foco en build context)
+
+Crea `labs/01-docker-basico/trabajo/dev-live/Dockerfile`:
+
+```dockerfile
+FROM python:3.11-slim
+
+WORKDIR /app
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY app ./app
+
+ENV FLASK_APP=app/main.py
+ENV FLASK_RUN_HOST=0.0.0.0
+ENV FLASK_RUN_PORT=8000
+
+CMD ["flask", "run", "--debug"]
+```
+
+### 3) Build usando el contexto correcto
+
+```bash
+cd labs/01-docker-basico/trabajo/dev-live
+docker build -t dev-live-api:1.0 .
+```
+
+Qué aprender aquí:
+
+- El `.` final es el **build context**.
+- Si haces build desde otra carpeta, `COPY app ./app` puede fallar o copiar archivos incorrectos.
+
+### 4) Ejecutar contenedor con puerto y volumen
+
+```bash
+docker run --rm -it \
+  --name dev-live-api \
+  -p 8010:8000 \
+  -v "$PWD/app:/app/app" \
+  dev-live-api:1.0
+```
+
+Qué significa:
+
+- `-p 8010:8000`: expone el puerto 8000 del contenedor en 8010 del host.
+- `-v "$PWD/app:/app/app"`: código local montado dentro del contenedor.
+- `--debug` en Flask activa recarga automática al detectar cambios.
+
+### 5) Validar servicio en ejecución
+
+En otra terminal:
+
+```bash
+curl -sS http://localhost:8010/health
+curl -sS http://localhost:8010/message
+```
+
+Debes ver JSON válido con estado `ok`.
+
+### 6) Probar auto-refresh modificando código
+
+Sin detener el contenedor, edita `app/main.py` y cambia:
+
+```python
+return jsonify({"message": "Hola desde Docker dev-live"})
+```
+
+por:
+
+```python
+return jsonify({"message": "Mensaje actualizado en caliente"})
+```
+
+Vuelve a probar:
+
+```bash
+curl -sS http://localhost:8010/message
 ```
 
 ## Qué validas y qué debes ver
 
-- `docker build` finaliza con `Successfully tagged custom-ubuntu-git`.
-- `docker compose up` crea servicios `db` y `client`.
-- El contenedor `client` imprime `(1,)` al ejecutar `SELECT 1`.
+- Build exitoso con tag `dev-live-api:1.0`.
+- Servicio accesible en `http://localhost:8010`.
+- El cambio de código se refleja sin rebuild manual de imagen.
+- En logs, Flask muestra recarga del proceso al guardar.
+
+## Errores comunes
+
+- Puerto ocupado: cambia `8010` por `8020` en `-p`.
+- Volumen mal montado: revisar ruta absoluta de `$PWD/app`.
+- Cambiaste archivo fuera de `app/`: no se refleja en el contenedor.
 
 ## Reto
 
-Modifica el `docker-compose.yml` para que la base de datos use el nombre `demo_db` y actualiza la conexión del cliente para seguir funcionando.
+Añade endpoint `GET /time` que devuelva hora UTC y confirma que se publica en caliente sin reiniciar contenedor.
 
 ## Solucion del reto
 
-```yaml
-services:
-  db:
-    container_name: demo_db
+Añade en `app/main.py`:
+
+```python
+from datetime import datetime, timezone
+
+@app.get("/time")
+def get_time():
+    return jsonify({"utc": datetime.now(timezone.utc).isoformat()})
 ```
 
-En la conexión del cliente, mantiene `host=db` (nombre del servicio) para no romper la resolución DNS de Compose.
+Valida:
+
+```bash
+curl -sS http://localhost:8010/time
+```
 
 ## Navegacion del libro
 

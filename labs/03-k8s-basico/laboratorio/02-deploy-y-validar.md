@@ -1,61 +1,80 @@
-# Step 02 - Deploy y validar
+# Step 02 - Apply y validacion del despliegue
 
 ## Objetivo del step
 
-Aplicar manifiestos en el cluster y verificar que API y DB quedan listas para tráfico.
+Aplicar los manifiestos y comprobar que `Deployment` y `Service` funcionan como en el tutorial oficial, pero con flujo declarativo.
 
 ## Fundamento del step
 
-Este step no es solo ejecución de comandos: su objetivo es construir criterio técnico. Cada acción busca evitar errores frecuentes de entorno, de configuración o de integración entre servicios. Antes de avanzar, asegúrate de entender qué problema resuelve cada bloque.
+El valor de este step es aprender a validar cada capa:
+
+1. Kubernetes acepta los recursos.
+2. El Deployment crea replicas sanas.
+3. El Service enruta trafico a esos Pods.
 
 ## Ejecución guiada
 
-### 1) Aplicar recursos
+### 1) Aplicar manifiestos
 
 ```bash
 kubectl apply -f labs/03-k8s-basico/trabajo/k8s/manifests/
 ```
 
-### 2) Esperar readiness
+### 2) Ver estado de recursos
 
 ```bash
-kubectl -n analytics-lab wait --for=condition=ready pod -l app=postgres --timeout=120s
-kubectl -n analytics-lab wait --for=condition=ready pod -l app=analytics-api --timeout=120s
+kubectl -n k8s-basics get deployments,pods,services
+kubectl -n k8s-basics rollout status deployment/kubernetes-bootcamp
 ```
 
-### 3) Probar API con port-forward
+### 3) Validar Service y endpoints
 
 ```bash
-kubectl -n analytics-lab port-forward svc/analytics-api 8080:80
+kubectl -n k8s-basics get svc kubernetes-bootcamp
+kubectl -n k8s-basics get endpoints kubernetes-bootcamp
+```
+
+### 4) Probar la app desde local con port-forward
+
+```bash
+kubectl -n k8s-basics port-forward service/kubernetes-bootcamp 8080:8080
 ```
 
 En otra terminal:
 
 ```bash
-curl -sS http://127.0.0.1:8080/health
-curl -sS http://127.0.0.1:8080/db/ping
+curl -sS http://127.0.0.1:8080/
 ```
 
 ## Qué validas y qué debes ver
 
-- Pods en `Running` y `Ready`.
-- Endpoints API respondiendo correctamente.
-- `db/ping` confirma acceso a Postgres.
+- `rollout status` finaliza correctamente.
+- `endpoints` muestra IPs de Pods asociados.
+- `curl` devuelve respuesta de la app (texto del bootcamp).
 
 ## Errores comunes
 
-- `ImagePullBackOff`: imagen no cargada en kind o tag incorrecto.
-- `CrashLoopBackOff`: revisar logs de deployment.
+- `selector` del Service no coincide con labels del Deployment.
+- Readiness probe mal configurada y Pods no pasan a `Ready`.
+- Namespace incorrecto al ejecutar `kubectl`.
 
 ## Reto
 
-Escala `analytics-api` a 3 réplicas y verifica que los 3 pods quedan listos.
+Escala el Deployment a 4 replicas declarativamente y re-aplica manifiestos.
 
 ## Solución del reto
 
+Edita `01-deployment.yaml` y cambia:
+
+```yaml
+replicas: 4
+```
+
+Luego:
+
 ```bash
-kubectl -n analytics-lab scale deploy/analytics-api --replicas=3
-kubectl -n analytics-lab get pods -l app=analytics-api
+kubectl apply -f labs/03-k8s-basico/trabajo/k8s/manifests/01-deployment.yaml
+kubectl -n k8s-basics get pods -l app=kubernetes-bootcamp
 ```
 
 ## Navegacion del libro

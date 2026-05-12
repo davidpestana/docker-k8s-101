@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: captura-imagenes
+  namespace: argo
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/davidpestana/docker-k8s-101.git
+    targetRevision: main
+    path: ejemplo-estructura/entornos/mikind/aplicaciones/captura-imagenes
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: capturina
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
